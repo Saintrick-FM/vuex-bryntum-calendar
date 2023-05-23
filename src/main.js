@@ -11,6 +11,19 @@ import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 
 const vuetify = createVuetify({
+    theme: {
+        defaultTheme: 'myCustomTheme',
+        themes: {
+          myCustomTheme: {
+            dark: false,
+            colors: {
+             // ..., // We have omitted the standard color properties here to emphasize the custom one that we've added
+              table_bg: '#eeeff8',
+              violet: '#7103f2'
+            }
+          }
+        }
+    },
     components,
     directives,
   })
