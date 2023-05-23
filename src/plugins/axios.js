@@ -1,9 +1,8 @@
 
 import axios from "axios";
 
-//const api = axios.create({ baseURL: 'https://api.example.com' })
 const api = axios.create({
- baseURL: "http://localhost:9000/" // my api root endpoint 
+ baseURL: "http://localhost:9000/" // l'endpoint de mon api
 });
 
 
